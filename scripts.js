@@ -1,3 +1,7 @@
+// Entrar e sair da conta
+// media do aluno
+// aluno - nome e curso
+
 const area = document.getElementById("area");
 
 const entrar = () => {
@@ -17,12 +21,12 @@ const entrar = () => {
   }
 };
 
-const sair = () => {
+function sair() {
   alert("Até mais!");
   area.innerHTML = "Você saiu...";
-};
+}
 
-function mediaAluno(nota1, nota2) {
+const mediaAluno = (nota1, nota2) => {
   const media = (nota1 + nota2) / 2;
 
   if (media >= 7) {
@@ -30,9 +34,9 @@ function mediaAluno(nota1, nota2) {
   } else if (media < 7) {
     console.log("Aluno reprovado com média: " + media);
   }
-}
+};
 
-function aluno(nome, curso) {
-  const menssagem = "Bem vindo " + nome + " ao curso de " + curso;
-  console.log(menssagem);
-}
+const aluno = (nome, curso) => {
+  const mensagem = "Bem vindo " + nome + " ao curso de " + curso;
+  console.log(mensagem);
+};
